@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 const App = () => {
 const [contacts, setContacts] = useState([
-{ id: 1, name: 'akshay', number: '+91 123 456 7890' },
-{ id: 2, name: 'adwaith', number: '+91 20 7946 0958' },
-{ id: 3, name: 'abinav', number: '+91 98765 43210' },
+{ id: 1, name: 'John Doe', number: '+1 123 456 7890' },
+{ id: 2, name: 'Jane Smith', number: '+44 20 7946 0958' },
+{ id: 3, name: 'Mike Johnson', number: '+91 98765 43210' },
 ]);
 const [newName, setNewName] = useState('');
 const [newNumber, setNewNumber] = useState('');
@@ -42,10 +42,10 @@ return (
 <h2>Phonebook</h2>
 {/* Add Contact Form */}
 <form onSubmit={addContact}>
-
 <input
 type="text"
 value={newName}
+
 onChange={(e) => setNewName(e.target.value)}
 placeholder="Enter name"
 required
